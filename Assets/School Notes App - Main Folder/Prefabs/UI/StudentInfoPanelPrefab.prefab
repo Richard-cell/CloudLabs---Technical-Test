@@ -980,8 +980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3383961, y: 0.36352548}
   m_AnchorMax: {x: 0.45593053, y: 0.7526148}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 55.6826, y: 0}
+  m_SizeDelta: {x: 111.3652, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3778630752707963340
 CanvasRenderer:
@@ -1287,7 +1287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 530167395, guid: f7dfdb4bd7fc2844c9dc4ec4f81264e7, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.83
 --- !u!1 &5884937917889502651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1444,10 @@ GameObject:
   - component: {fileID: 8501667223085507246}
   - component: {fileID: 3789346972980912784}
   - component: {fileID: 1513492708638982917}
+  - component: {fileID: 3119985966975092232}
+  - component: {fileID: 1543286897190352500}
+  - component: {fileID: 8115995389213254503}
+  - component: {fileID: 3240231121698974264}
   m_Layer: 5
   m_Name: StudentInfoPanelPrefab
   m_TagString: Untagged
@@ -1508,7 +1512,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 1199042720, guid: f7dfdb4bd7fc2844c9dc4ec4f81264e7, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1516,7 +1520,73 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.88
+--- !u!114 &3119985966975092232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228236277463629065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ffd401568d6fc844ac013566802be50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SchoolNotesApp.StudentFeature.View.StudentInfoPanelSetter
+  _nameText: {fileID: 5461935900355898583}
+  _initialText: {fileID: 5060239982964245368}
+  _initialCircleImage: {fileID: 6740606711667885607}
+  _initialSaturation: 0.65
+  _initialValue: 0.5
+  _codeText: {fileID: 5105876088271026497}
+  _emailText: {fileID: 8719522310866388763}
+  _noteText: {fileID: 9087277556054085874}
+--- !u!114 &1543286897190352500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228236277463629065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1600fb029dbe3c41bea110e4e653290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SchoolNotesApp.StudentFeature.View.StudentStateSetterUI
+  _approveToggle: {fileID: 2459272780864993109}
+  _failToggle: {fileID: 4456392743447271102}
+--- !u!114 &8115995389213254503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228236277463629065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1d78dcf386d1a46adec7fcff60b3e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SchoolNotesApp.StudentFeature.View.StudentStateDesignSetter
+  _stateText: {fileID: 503502803429883307}
+  _noteImage: {fileID: 8801805345388381230}
+  _approvedColor: {r: 0.15, g: 0.65, b: 0.25, a: 1}
+  _failedColor: {r: 0.75, g: 0.2, b: 0.2, a: 1}
+  _pendingColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+--- !u!114 &3240231121698974264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228236277463629065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8123913617947613314
 GameObject:
   m_ObjectHideFlags: 0
