@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 namespace SchoolNotesApp.StudentFeature.View
 {
+    /// <summary>
+    /// Controla los controles de la interfaz que permiten asignar manualmente el
+    /// estado de calificación de cada estudiante en el panel de notas.
+    /// </summary>
     public sealed class StudentStateSetterUI : MonoBehaviour
     {
         [Header("References")]

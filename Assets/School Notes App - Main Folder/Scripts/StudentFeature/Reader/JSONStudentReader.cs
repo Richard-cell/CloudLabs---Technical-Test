@@ -6,6 +6,10 @@ using UnityEngine;
 
 namespace SchoolNotesApp.StudentFeature.Reader
 {
+    /// <summary>
+    /// Implementación de IStudentReader que deserializa la lista de estudiantes
+    /// desde un archivo JSON ubicado en StreamingAssets.
+    /// </summary>
     public sealed class JSONStudentReader : IStudentReader
     {
         private const string _fileName = "estudiantes.json";

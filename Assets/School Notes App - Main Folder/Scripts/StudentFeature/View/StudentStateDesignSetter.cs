@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 namespace SchoolNotesApp.StudentFeature.View
 {
+    /// <summary>
+    /// Aplica el diseño visual (colores e íconos) de un elemento de interfaz
+    /// según el estado de calificación del estudiante.
+    /// </summary>
     public sealed class StudentStateDesignSetter : MonoBehaviour
     {
         [Header("References")]

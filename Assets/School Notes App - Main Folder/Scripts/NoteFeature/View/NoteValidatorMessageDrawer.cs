@@ -11,6 +11,10 @@ using UnityEngine.UI;
 
 namespace SchoolNotesApp.NoteFeature.View
 {
+    /// <summary>
+    /// Presenta en pantalla los mensajes de validación de notas (éxito o errores)
+    /// y notifica cuando la validación es requerida para continuar.
+    /// </summary>
     public sealed class NoteValidatorMessageDrawer : MonoBehaviour, IValidationFeedback
     {
         [Header("References")]
@@ -81,6 +85,21 @@ namespace SchoolNotesApp.NoteFeature.View
             }
 
             Draw(_validator.Validate(_studentReader.ReadStudents()));
+        }
+
+        public void ResetValidation()
+        {
+            _lastValidationResult = null;
+
+            if (_messageText != null)
+            {
+                _messageText.text = string.Empty;
+            }
+
+            if (_resultPanel != null)
+            {
+                _resultPanel.SetActive(false);
+            }
         }
 
         public void Draw(NoteValidationResult result)

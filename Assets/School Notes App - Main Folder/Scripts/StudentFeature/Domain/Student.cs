@@ -2,6 +2,10 @@ using System;
 
 namespace SchoolNotesApp.StudentFeature.Domain
 {
+    /// <summary>
+    /// Modelo de dominio de un estudiante: identidad, nota y estado de
+    /// calificación, con la lógica para transicionar entre estados.
+    /// </summary>
     public sealed class Student
     {
         private const float _minGrade = 0f;

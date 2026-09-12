@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 namespace SchoolNotesApp.Common
 {
+    /// <summary>
+    /// Controla la navegación entre paneles de la aplicación y bloquea el avance
+    /// cuando la validación requerida no se ha completado correctamente.
+    /// </summary>
     public sealed class PanelNavigator : MonoBehaviour
     {
         [Header("References")]

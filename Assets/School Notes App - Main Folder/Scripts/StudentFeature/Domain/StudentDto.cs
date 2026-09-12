@@ -3,6 +3,9 @@ using System;
 namespace SchoolNotesApp.StudentFeature.Domain
 {
     [Serializable]
+    /// <summary>
+    /// DTO que representa la estructura de un estudiante según el origen de datos.
+    /// </summary>
     public sealed class StudentDto
     {
         public string nombre;

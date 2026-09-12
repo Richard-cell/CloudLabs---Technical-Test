@@ -4,6 +4,10 @@ using SchoolNotesApp.StudentFeature.Domain;
 
 namespace SchoolNotesApp.NoteFeature.Validation
 {
+    /// <summary>
+    /// Resultado de una validación de notas: estudiantes aprobados indebidamente,
+    /// reprobados indebidamente y estudiantes sin calificar.
+    /// </summary>
     public sealed class NoteValidationResult
     {
         public IReadOnlyList<Student> WronglyApproved { get; }

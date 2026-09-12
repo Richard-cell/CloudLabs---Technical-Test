@@ -4,6 +4,10 @@ using SchoolNotesApp.StudentFeature.Domain;
 
 namespace SchoolNotesApp.NoteFeature.Validation
 {
+    /// <summary>
+    /// Valida las calificaciones comparando el estado de cada estudiante con la
+    /// nota de aprobación configurada y devuelve el resultado de la validación.
+    /// </summary>
     public sealed class NoteValidator
     {
         private readonly float _passingGrade;
